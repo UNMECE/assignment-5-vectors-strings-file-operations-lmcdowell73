@@ -3,7 +3,6 @@
 #include <vector>
 #include <string>
 #include "pixel.h"
-#include <algorithm>
 
 void average_colors(std::vector<Pixel> &pixel_list) {
     float total_r = 0.0f, total_g = 0.0f, total_b = 0.0f;
@@ -94,6 +93,9 @@ for (size_t i =0; i < pixel_list.size(); ++i) {
     }
 
 outfile.close();
+
+printf("File flipped.dat created and saved.");
+
 
 return 0;
 }
